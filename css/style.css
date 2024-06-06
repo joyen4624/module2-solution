@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+.card {
+    background-color: #ccc; /* Màu nền xám */
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    color: #333; /* Màu chữ */
+}
+
+/* Điều chỉnh cho màn hình máy tính bàn */
+@media (min-width: 992px) {
+    .column {
+        flex: 1 0 30%; /* Mỗi cột chiếm 30% chiều rộng của hàng */
+    }
+}
+
+/* Điều chỉnh cho màn hình máy tính bảng */
+@media (min-width: 768px) and (max-width: 991px) {
+    .column {
+        flex: 1 0 48%; /* Mỗi cột chiếm 48% chiều rộng của hàng */
+    }
+}
+
+/* Điều chỉnh cho màn hình di động */
+@media (max-width: 767px) {
+    .column {
+        flex: 1 0 100%; /* Mỗi cột chiếm 100% chiều rộng của hàng */
+    }
+}
